@@ -1,0 +1,58 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$primary-color: tomato
+$secondary-color: sienna
+$tertiary-color: orange
+$box-color: aliceblue
+$body-color: navy
+$box2-color: pink
+
+$font-stack: Arial, Helvetica, sans-serif
+$width: 200px
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+body 
+	background-color: $body-color
+
+.box
+	+border-radius(10px)
+	background-color: $box-color
+	margin: 15px
+	padding: 15px
+	width: $width*2
+
+
+.box2
+	+border-radius(5px)
+	background-color: $box2-color
+	margin: 15px
+	padding: 15px
+	width: $width/4
+	height: $width/4
+
+h1
+	color: $primary-color
+
+h2
+	color: $secondary-color
+
+h3
+	color: $tertiary-color
+
+ul
+	li 
+		font-style: $font-stack
+		color: $secondary-color
+		a 
+			color: $primary-color
+
+p 
+	color: yellow + green
